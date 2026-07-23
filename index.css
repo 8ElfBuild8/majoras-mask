@@ -129,7 +129,7 @@ p {
   width: 70%;                   /* Toma el ancho total disponible */
   font-size: 160px;   /* Corregido: se usa font-size, no font */
   margin: 70px;
-
+  margin-top: 0px;
 }
 
 /* Tarjeta o imagen de Majora's Mask */
