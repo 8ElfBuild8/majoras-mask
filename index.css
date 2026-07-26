@@ -5,13 +5,15 @@ body {
 	margin: 60px;
 	background-image: url("patrones4.png");
     zoom: 0.75; 
+	flex-wrap:wrap;
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
+    
     /* Ajusta este valor para que coincida exactamente con la altura de tu nav fijo */
     scroll-padding-top: 270px; 
-	  
+	    
 }
 
 
@@ -22,9 +24,12 @@ header {
 	height: auto;
 	padding: 0px;
 	justify-content: center;
-	margin: 100px;
+	margin: 10px;
 	margin-top: 200px;
-	
+	margin-right: 50px;
+	margin-bottom: 50px;
+	 padding-top: 20px;
+	 box-sizing: border-box;
 }
 
 img {
@@ -41,7 +46,7 @@ img {
 }
 
 img:hover  {
-	box-shadow: 0px 14px 40px yellow;
+	box-shadow: 15px 14px 40px yellow;
 }
 
 .menu {
@@ -53,6 +58,8 @@ img:hover  {
 	border: 5px solid white;
 	box-shadow: 0px 14px 40px white;
 	 z-index: 9999;
+	 justify-content: center;
+	 box-sizing: border-box; 
 }
 
 .menu {
@@ -60,45 +67,81 @@ img:hover  {
     width: 95%;
     padding: 10px;
     justify-content: center;
-	font-size: 30px;
+	font-size: 20x;
     text-shadow: 0px 8px 15px black;
 	cursor: pointer;
-	gap: 20px;
+	gap: 40px;
 	color: white;
 	flex-wrap:wrap;
 	margin-bottom: 40px;
+	 box-sizing: border-box; 
 }
 
 .menu:hover {
 	box-shadow: 0px 14px 40px yellow;
+	
 }
 
-.zelda {
+a {
+	color:white;
+}
+
+a:hover{
+	color:yellow;
+}
+
+
+
+.bloque1 {
 	display : flex;
-	gap:80px;
+	gap:30px;
 	color: white;
 	font-size: 80px;
 	justify-content: center;
 	text-shadow: 0px 8px 15px black;
 	width: 90%;
-	
+	left: 0;
+	right: 0;
+	flex-wrap:wrap;
 }
 
 .link {
-	
-    width: clamp(300px, 45%, 800px);
+	flex-wrap:wrap;
+    width: 45%;
     height: auto;
     display: inline;
-	margin-bottom: 90px;
-	 
+	top: 10px;
+	bottom:20px;
+	border-radius: 50%;
+	border: 10px solid white;
 }
 
-.link img {
-    width: 55%;
-    height: auto;
-    display: inline;
+.link  {
+   
 	align-items: center;
 }
+
+.videogames {
+	background-color: forestgreen;
+	color: white;
+	width: 45%;
+	height: 170px;
+	border: 5px solid white;
+	padding: 26px;
+	box-shadow: 0px 14px 40px white;
+	bottom: 20px;
+    font-size: 38px;
+	word-break: break-word;
+	white-space: normal;
+	align-items: center;
+	text-align: center;
+}
+
+.videogames:hover {
+	box-shadow: 0px 14px 40px yellow;
+	background-color: slateblue;
+}
+
 
 /* Contenedor principal que agrupa las dos secciones */
 .bloque2 { 
@@ -107,6 +150,7 @@ img:hover  {
   justify-content: space-around; /* Distribuye el espacio uniformemente */
   align-items: flex-start;       /* Alinea los elementos arriba */
   margin: 40 ;               /* Centra todo el bloque en la pantalla */
+  flex-wrap:wrap;
 }
 
 /* Las etiquetas de texto (p) ahora se alinean correctamente */
@@ -118,6 +162,8 @@ p {
   margin-bottom: 0px !important;  /* Elimina por completo el espacio de abajo del título */
   padding-bottom: 0px;
   color: white;
+  flex-wrap:wrap;
+ 
 }
 
 /* Sección de la música (Zelda y Rayquaza) en Grid */
@@ -137,7 +183,7 @@ p {
   width: 125%;    /* Corregido: se cerró la llave correctamente */
   margin-right: 70px;
   flex-wrap:wrap;
-  display: block;
+  display: flex;
   
 }
 
@@ -145,8 +191,7 @@ p {
 /* Cada tarjeta ordena su contenido de arriba hacia abajo de forma limpia */
 .audio-card { 
   width: 85%; 
-  height: 60px;
-  display: block;               /* Fuerza a que el audio baje e ir exactamente debajo del label */
+ 
   align-items: center;       /* Centra el label y el reproductor horizontalmente */
   padding: 5px;
   gap: 15px;
@@ -193,7 +238,7 @@ audio {
 .mySlides {
   display: flex;
   position: relative;
-margin-top: 50px;
+  margin-top: 50px;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -210,12 +255,13 @@ margin-top: 50px;
   width: auto;
   padding: 16px;
   margin-top: 50px;
-  color: white;
+  color: forestgreen;
   font-weight: bold;
   font-size: 80px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  background-color: yellow;
 }
 
 /* Position the "next button" to the right */
@@ -275,6 +321,129 @@ margin-top: 50px;
   opacity: 1;
 }
 
-a{
-	color:yellow;
+
+.contact h2 {
+    color: white;
+    font-size: 70px;
+    background-color: forestgreen;
+    padding: 10px;
+    border: 5px solid white;
+    box-shadow: 0px 14px 40px rgba(255, 255, 255, 0.3); /* Sombra suavizada */
+    width: 30%;
+    display: block;
+    margin: 0 auto; /* Centra el bloque horizontalmente */
+    border-radius: 20px;
+    text-align: center; /* Centra el texto dentro del bloque */
+}
+
+span{
+	color: yellow;
+}
+
+.contact h2:hover {
+	box-shadow: 0px 14px 40px yellow;
+	background-color: slateblue;
+}
+
+.contact form {
+      display : block;
+      align-items: center;
+      justify-content: center;
+      gap: 90px;
+      margin: 50px; 	  
+      text-align: center;
+      color: white;
+	  font-size: 40px;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+	width: 60%;
+	padding: 25px;
+	font-size: 38px;
+	color: white;
+	background-color: forestgreen;
+	border-radius: 20px;
+	border: 5px solid yellow;
+	margin: 15px;
+	resize: none;
+	
+}
+
+input::placeholder {
+  color: white; 
+}
+
+.btn {
+	background-color: forestgreen;
+	color: white;
+	border-radius: 20px;
+	border: 5px solid yellow;
+	box-shadow: 0px 7px 10px forestgreen;
+    width: 30%;
+	height: 180px;
+	padding: 10px ;
+   font-size: 48px;
+
+}
+
+.btn:hover {
+	box-shadow: 0px 7px 10px white;
+}
+
+.heading h2{
+     display: flex;
+     justify-content: center;	 
+}
+
+input::placeholder {
+	color: white;
+}
+
+.input-group-2 { 
+  color: white; 
+  display: block; 
+  width: 80%; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.textarea {
+	color: white;
+	background-color: white;
+}
+
+/* Cambia el color del texto "Your Message" */
+.input-group-2 textarea::placeholder {
+    color: white; /* Pon aquí el color que más te guste */
+    opacity: 1;         /* Asegura que el color se vea intenso en todos los navegadores */
+
+    width: 60%;
+	display: block ;
+}
+
+
+@media (max-width:800px) {
+	.menu{
+		height: auto;
+		display: flex;
+		width: 80%;
+		padding: 5px;
+		font-size: 14px;
+		
+	}
+	
+	
+	
+	.header {
+		  display: block;
+		  margin-top: 30px;
+		  margin: 10px auto;
+		  padding-top: 60px;
+	}
+	
+	img {
+		width: 70%;
+	}
 }
