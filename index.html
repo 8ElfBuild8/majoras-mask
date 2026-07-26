@@ -1,3 +1,4 @@
+
 <title> Nintendo </title>
 
 <header>
@@ -7,23 +8,28 @@
 <div id="click1">
       <nav class="menu">
          <a href="#home"><h1>Home</h1></a>
-         <h1>About</h1>
-         <a href="#musica"><h1>Music</h1></a>
-         <h1>Videos</h1>
-         <h1>Contact</h1>
-         <a href="#gallery"><h1>Gallery</h1></a>
+        <a href="#about"> <h1>About</h1></a>
+         <a href="#musica"><h1>Music</h1></a> 
+		<a href="#gallery"><h1>Gallery</h1></a>
+		<a href="#videos"> <h1>Videos</h1></a>
+        <a href="#contact">  <h1>Contact</h1></a>
+         
       </nav>
 </div>
 
 
-<div class="zelda">
-    <img src="link.jpg" style="width:45%" class="link">
-	<p> Majora's Mask , is one of the best Zelda, video games.   </p>
-</div>
+     <div class="bloque1">
+	 
+          <img src="link.jpg"  class="link">
+	 
+	      <p class="videogames"> Majora's Mask , is one of the best Zelda, video games.   </p>
+     
+	 </div>
+
 
 <div class="bloque2">
       <div class="musica" id="musica" >
-        <p style="max-width: 200px; text-align: left; margin: 130 ; font-size: 124px; color: white;">Músicas.</p>
+        <p style="max-width: 200px; text-align: left; margin: 130 ; font-size: 124px; color: white;"> Musicas.</p>
 
              
              <div class="audio-card"> 
@@ -56,7 +62,7 @@
 
 <div class="mySlides">
 <div class="numbertext">2 / 5</div>
-<img src="zora-mask.jpg"> </img>
+<img src="zora-2.png"> </img>
 </div>
 
 <div class="mySlides">
@@ -66,7 +72,7 @@
 
 <div class="mySlides">
 <div class="numbertext">4 / 5</div>
-<img src="deku.jpg"> </img>
+<img src="deku-mask.png"> </img>
 </div>
 
 <div class="mySlides">
@@ -87,13 +93,13 @@
       <img class="demo cursor" src="goron-mask.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
     </div>
     <div class="column">
-      <img class="demo cursor" src="zora-mask.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      <img class="demo cursor" src="zora-2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
     </div>
     <div class="column">
       <img class="demo cursor" src="zelda-deku.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
     </div>
     <div class="column">
-      <img class="demo cursor" src="deku.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="deku-mask.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
     </div>
     <div class="column">
       <img class="demo cursor" src="deku-2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
@@ -104,8 +110,33 @@
 
 </div>
 
+<div class="contact" id="contact"> 
+    <h2 class="heading"> Contact <span> Me </span> </h2> 
+    
+    <!-- Se añade el método POST y la acción mailto directamente en el formulario -->
+    <form action="mailto:elfwriterbluemoon@gmail.com" method="post" enctype="text/plain"> 
+        <div class="input-group"> 
+            <div class="input-box"> 
+                <input type="text" placeholder=" Full Name "> 
+                <input type="email" placeholder=" Email "> 
+            </div> 
+            <div class="input-box"> 
+                <input type="number" placeholder=" Phone Number "> 
+                <input type="text" placeholder=" Subject "> 
+            </div> 
+        </div> 
+        <div class="input-group-2"> 
+            <textarea name="message" id="message" cols="50" rows="10" placeholder="Your Message"></textarea> <br>
+            <!-- Se elimina la etiqueta <a> externa -->
+            <input type="submit" value="Send Message" class="btn">
+        </div>
+    </form> <!-- Se cierra la etiqueta form -->
+</div> <!-- Se cierra la etiqueta div principal -->
 
-
+	 
+	 
+</form> 
+</div> 
 
 <br>
 <link rel="stylesheet" href="index.css">
@@ -113,4 +144,3 @@
 <script src="index.js"></script>
 <script src="index-slider.js"></script>
 
- 
