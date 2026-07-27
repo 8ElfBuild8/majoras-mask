@@ -142,6 +142,7 @@ a:hover{
 	white-space: normal;
 	align-items: center;
 	text-align: center;
+	overflow: auto;
 }
 
 .videogames:hover {
