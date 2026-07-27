@@ -1,11 +1,15 @@
-
+* {
+	box-sizing: border-box;
+	
+}
 
 body {
 	background-color: slateblue;
 	margin: 60px;
 	background-image: url("patrones4.png");
-    zoom: 0.75; 
+
 	flex-wrap:wrap;
+	width: 100%;
 }
 
 html {
@@ -32,13 +36,17 @@ header {
 	 box-sizing: border-box;
 }
 
+header img {
+	width: 70%;
+}
+
 img {
 	display: inline;
 	justify-content: center;
 	border: 5px solid white;
     border-radius: 0px;
 	width: 100%;
-	 max-width: 1900px;
+	 
 	height: auto;
 	padding: 0px;
 	margin-right: 5px;
@@ -52,7 +60,7 @@ img:hover  {
 .menu {
 	top: 0;
 	position: fixed;
-	margin-bottom: 10px;
+	margin-bottom: 50px;
     background-color: gray;
 	margin: auto;
 	border: 5px solid white;
@@ -60,21 +68,20 @@ img:hover  {
 	 z-index: 9999;
 	 justify-content: center;
 	 box-sizing: border-box; 
-}
-
-.menu {
     display: flex;
     width: 95%;
     padding: 10px;
     justify-content: center;
-	font-size: 20x;
+	
     text-shadow: 0px 8px 15px black;
 	cursor: pointer;
-	gap: 40px;
+	gap: 20px;
 	color: white;
 	flex-wrap:wrap;
 	margin-bottom: 40px;
 	 box-sizing: border-box; 
+	 font-size: 20 px;
+	 
 }
 
 .menu:hover {
@@ -145,12 +152,13 @@ a:hover{
 
 /* Contenedor principal que agrupa las dos secciones */
 .bloque2 { 
-  display: flex; 
+display: flex;
   width: 80%; 
   justify-content: space-around; /* Distribuye el espacio uniformemente */
   align-items: flex-start;       /* Alinea los elementos arriba */
   margin: 40 ;               /* Centra todo el bloque en la pantalla */
   flex-wrap:wrap;
+  
 }
 
 /* Las etiquetas de texto (p) ahora se alinean correctamente */
@@ -170,31 +178,31 @@ p {
 .musica { 
   display: grid; 
   
-  gap: 50px;                     /* Espacio limpio entre las dos tarjetas */
+  gap: 5px;                     /* Espacio limpio entre las dos tarjetas */
   color: white; 
   width: 70%;                   /* Toma el ancho total disponible */
   font-size: 160px;   /* Corregido: se usa font-size, no font */
-  margin: 70px;
+  margin: 50px;
   margin-top: 0px;
 }
 
 /* Tarjeta o imagen de Majora's Mask */
 .majoras { 
-  width: 125%;    /* Corregido: se cerró la llave correctamente */
+  width: 100%;    /* Corregido: se cerró la llave correctamente */
   margin-right: 70px;
   flex-wrap:wrap;
-  display: flex;
-  
+  display:flex ;
+margin: 20px;  
 }
 
 
 /* Cada tarjeta ordena su contenido de arriba hacia abajo de forma limpia */
 .audio-card { 
-  width: 85%; 
+  width: 55%; 
  
   align-items: center;       /* Centra el label y el reproductor horizontalmente */
   padding: 5px;
-  gap: 15px;
+  gap: 5px;
   
     white-space: wrap;
 	 margin: 5px ;
@@ -214,32 +222,60 @@ color: white;
 
 /* El reproductor de audio se adapta al ancho disponible */
 audio {
-  width: 50%;
+  width: 60%;
   height: 80px;
 }
 
-.mascaras {
-	width: 80%;
-	height: auto;
-	display: grid;
+.container {
+	width: 50%;
+	max-width: 80%;
+	height: 60%;
+	display: block;
+	overflow: auto;
 	justify-content: center;
-	margin: 100px;
+	margin: 60px;
 	gap: 10px;
 	position: relative;
+	padding: 5px;
+	left: 60px;
 }
 
-.mascaras {
+.container body{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  min-height: 100vh;       /* Usa todo el alto de la pantalla */
+  margin: 0;               /* Elimina márgenes por defecto */
+}
+
+}
+
+.container {
   position: relative;
   box-sizing: border-box;
-  margin: 620px;
+  margin: 60px;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: flex;
-  position: relative;
+  display: none;
+  
   margin-top: 50px;
+  width: 100%;
+ 
+ 
 }
+
+.mySlides img{
+	flex: 100%;
+	width: 100%;
+	height: auto;
+	transform: translateX (-50%);
+	object-fit:cover;
+	object-position:center;
+	
+}
+
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
@@ -251,7 +287,7 @@ audio {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 30%;
   width: auto;
   padding: 16px;
   margin-top: 50px;
@@ -262,6 +298,7 @@ audio {
   user-select: none;
   -webkit-user-select: none;
   background-color: yellow;
+ 
 }
 
 /* Position the "next button" to the right */
@@ -282,21 +319,30 @@ audio {
   font-size: 80px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 50px;
+  background-color: black;
+  margin: 5px;
+  border: 5px solid white;
 }
 
 /* Container for image text */
 .caption-container {
+  display: flex;               /* ACTIVA FLEXBOX (Obligatorio para alinear verticalmente) */
+  justify-content: center;     /* Centra el texto horizontalmente */
+  align-items: center;         /* Centra el texto verticalmente */
+  
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
+  background-color: rgba(34, 34, 34, 0.85); /* Fondo oscuro con ligera transparencia para el modo 100% */
+  padding: 10px;
   color: white;
   height: 300px;
   border: 5px solid white;
+  font-size: 100px;
 }
 
 .caption {
 	color:white;
+	font-size: 40px;
 }
 
 .row:after {
@@ -308,7 +354,7 @@ audio {
 /* Six columns side by side */
 .column {
   float: left;
-  width: 16.66%;
+  width: 20%;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -358,7 +404,7 @@ span{
 
 .contact form .input-box input,
 .contact form textarea {
-	width: 60%;
+	width: 70%;
 	padding: 25px;
 	font-size: 38px;
 	color: white;
@@ -380,7 +426,7 @@ input::placeholder {
 	border-radius: 20px;
 	border: 5px solid yellow;
 	box-shadow: 0px 7px 10px forestgreen;
-    width: 30%;
+    width: 60%;
 	height: 180px;
 	padding: 10px ;
    font-size: 48px;
@@ -446,4 +492,14 @@ input::placeholder {
 	img {
 		width: 70%;
 	}
+	
+	.majoras {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+	top:60px;
+  }
+
 }
