@@ -129,7 +129,7 @@ a:hover{
 	align-items: center;
 }
 
-.videogames {
+.videogames  {
 	background-color: forestgreen;
 	color: white;
 	width: 45%;
@@ -357,7 +357,6 @@ audio {
 .column {
   float: left;
   width: 20%;
-  height: auto;	
 }
 
 /* Add a transparency effect for thumnbail images */
