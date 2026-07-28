@@ -228,104 +228,85 @@ audio {
   height: 80px;
 }
 
+/* 1. Base Body Styles: Centers everything on the screen */
+body {
+  display: block;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;       
+  margin: 0;               
+  background-color: #f5f5f5; /* Optional: adds a neutral background */
+}
+
+/* 2. Main Slideshow Container */
 .container {
-	width: 50%;
-	max-width: 80%;
-	height: 60%;
-	display: block;
-	overflow: auto;
-	justify-content: center;
-	margin: 60px;
-	gap: 10px;
-	position: relative;
-	padding: 5px;
-	left: 60px;
-}
-
-.container body{
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center;     /* Centra verticalmente */
-  min-height: 100vh;       /* Usa todo el alto de la pantalla */
-  margin: 0;               /* Elimina márgenes por defecto */
-}
-
-}
-
-.container {
+  width: 100%;
+  max-width: 1800px; /* Limits maximum width on large screens */
   position: relative;
   box-sizing: border-box;
-  margin: 60px;
+  padding: 20px;
+  margin: 0 auto; /* Centers the container itself */
 }
 
-/* Hide the images by default */
+/* 3. Slide Wrapper */
 .mySlides {
-  display: none;
-  
-  margin-top: 50px;
+  display: none; /* Controlled by JavaScript (e.g., display: block when active) */
+  justify-content: center;
+  align-items: center;
   width: 100%;
- 
- 
 }
 
-.mySlides img{
-	flex: 100%;
-	width: 100%;
-	height: auto;
-	transform: translateX (-50%);
-	object-fit:cover;
-	object-position:center;
-	
+/* 4. Responsive Images */
+.mySlides img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
-
-/* Add a pointer when hovering over the thumbnail images */
+/* 5. Interactive Elements */
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
+/* 6. Navigation Buttons */
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%); /* Perfectly centers buttons vertically */
   width: auto;
-  padding: 16px;
-  margin-top: 50px;
+  padding: 16px; /* Reduced from 46px to look cleaner */
   color: forestgreen;
   font-weight: bold;
-  font-size: 80px;
-  border-radius: 0 3px 3px 0;
+  font-size: 30px; /* Reduced from 80px to fit standard screens */
+  border-radius: 3px;
   user-select: none;
   -webkit-user-select: none;
-  background-color: yellow;
- 
+  background-color: rgba(255, 255, 0, 0.8); /* Semi-transparent yellow */
+  transition: 0.3s ease;
+  z-index: 10; /* Ensures buttons stay on top of images */
 }
 
-/* Position the "next button" to the right */
+/* Position arrows slightly inside or outside the container edge */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  right: -60px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+.prev {
+  left: -60px;	
+}
+
+/* Hover States */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 80px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 50px;
-  background-color: black;
-  margin: 5px;
-  border: 5px solid white;
-}
 
 /* Container for image text */
 .caption-container {
@@ -370,18 +351,25 @@ audio {
 }
 
 
+
 .contact h2 {
-    color: white;
-    font-size: 70px;
-    background-color: forestgreen;
-    padding: 10px;
-    border: 5px solid white;
-    box-shadow: 0px 14px 40px rgba(255, 255, 255, 0.3); /* Sombra suavizada */
-    width: 30%;
-    display: block;
-    margin: 0 auto; /* Centra el bloque horizontalmente */
-    border-radius: 20px;
-    text-align: center; /* Centra el texto dentro del bloque */
+  color: white;
+  font-size: 50px;
+  background-color: forestgreen;
+  padding: 10px;
+  left: 10px;
+  right: 10px;
+  
+  border: 5px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 14px 40px rgba(255, 255, 255, 0.3);
+  width: 15%;
+  max-width: 15%;
+  margin: 200px auto 0 auto; /* Sets top spacing and centers horizontally */
+  text-align: center;
+  box-sizing: border-box; /* Keeps borders and padding inside the 30% width */
+}
+
 }
 
 span{
@@ -393,34 +381,50 @@ span{
 	background-color: slateblue;
 }
 
+/* 1. Form Container Layout */
 .contact form {
-      display : block;
-      align-items: center;
-      justify-content: center;
-      gap: 90px;
-      margin: 50px; 	  
-      text-align: center;
-      color: white;
-	  font-size: 40px;
+  display: block; /* Changed from block to flex for proper spacing */
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers form elements horizontally */
+  justify-content: center;
+  gap: 20px; /* Reduced from 90px to prevent massive gaps */
+  margin: 50px auto; /* Centers the form block itself */
+  text-align: center;
+  color: white;
+  font-size: 24px; /* Scaled down from 40px for better readability */
+  width: 50%;
+  max-width: 1800px; /* Reduced from 1800px to look good on desktops */
+  box-sizing: border-box;
 }
 
+/* 2. Form Inputs & Textarea fields */
 .contact form .input-box input,
 .contact form textarea {
-	width: 70%;
-	padding: 25px;
-	font-size: 38px;
-	color: white;
-	background-color: forestgreen;
-	border-radius: 20px;
-	border: 5px solid yellow;
-	margin: 15px;
-	resize: none;
-	
+  width: 90%; /* Spans full width of the 800px container */
+  box-sizing: border-box; /* Includes padding/borders in width calculation */
+  padding: 15px 20px; /* Clean, modern padding proportions */
+  font-size: 18px; /* Balanced text size for standard screens */
+  color: white;
+  background-color: forestgreen;
+  border-radius: 12px; /* Smoother radius look */
+  border: 3px solid yellow; /* Cleaner border thickness */
+  margin: 5px 0;
+  
+  outline: none; /* Removes default browser input glow */
 }
 
-input::placeholder {
-  color: white; 
+/* 3. Input Focus State */
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+  border-color: white; /* Visual feedback when user clicks field */
 }
+
+/* 4. Global Placeholder Colors */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Slightly transparent white for better UX */
+}
+
 
 .btn {
 	background-color: forestgreen;
@@ -429,7 +433,7 @@ input::placeholder {
 	border: 5px solid yellow;
 	box-shadow: 0px 7px 10px forestgreen;
     width: 60%;
-	height: 180px;
+	height: 140px;
 	padding: 10px ;
    font-size: 48px;
 
@@ -448,28 +452,24 @@ input::placeholder {
 	color: white;
 }
 
-.input-group-2 { 
+.input-group-2, .input-group-1 { 
   color: white; 
   display: block; 
   width: 80%; 
   margin-left: auto;
   margin-right: auto;
-
 }
 
-.textarea {
+textarea {
+	width: 60%;
+}
+
+textarea::placeholder {
 	color: white;
-	background-color: white;
+	
+	font-size:28px;
 }
 
-/* Cambia el color del texto "Your Message" */
-.input-group-2 textarea::placeholder {
-    color: white; /* Pon aquí el color que más te guste */
-    opacity: 1;         /* Asegura que el color se vea intenso en todos los navegadores */
-
-    width: 60%;
-	display: block ;
-}
 
 
 @media (max-width:800px) {
