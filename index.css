@@ -478,8 +478,7 @@ textarea::placeholder {
 		display: flex;
 		width: 80%;
 		padding: 5px;
-		font-size: 14px;
-		
+		font-size: 10px;
 	}
 	
 	
@@ -504,4 +503,9 @@ textarea::placeholder {
 	top:60px;
   }
 
+	.container, h2 {
+         font-size: 10px;
+		{
+
+	
 }
