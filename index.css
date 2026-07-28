@@ -354,7 +354,7 @@ body {
 
 .contact h2 {
   color: white;
-  font-size: 50px;
+  font-size: 30px;
   background-color: forestgreen;
   padding: 10px;
   left: 10px;
@@ -435,7 +435,7 @@ textarea::placeholder {
     width: 60%;
 	height: 140px;
 	padding: 10px ;
-   font-size: 48px;
+   font-size: 18px;
 
 }
 
