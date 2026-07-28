@@ -69,7 +69,8 @@ img:hover  {
 	 justify-content: center;
 	 box-sizing: border-box; 
     display: flex;
-    width: 95%;
+    width: 100%;
+	left: 0;
     padding: 10px;
     justify-content: center;
 	
