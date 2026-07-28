@@ -363,8 +363,8 @@ body {
   border: 5px solid white;
   border-radius: 20px;
   box-shadow: 0px 14px 40px rgba(255, 255, 255, 0.3);
-  width: 15%;
-  max-width: 15%;
+  width: 30%;
+  max-width: 30%;
   margin: 200px auto 0 auto; /* Sets top spacing and centers horizontally */
   text-align: center;
   box-sizing: border-box; /* Keeps borders and padding inside the 30% width */
