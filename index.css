@@ -3,7 +3,9 @@
 	}
 	
 	html {
-      zoom: 75%;	
+      zoom: 75%;
+      margin-left: 10%;
+      margin-right: 10%;	  
 	}
 
 body {
@@ -48,8 +50,7 @@ img {
 	justify-content: center;
 	border: 5px solid white;
     border-radius: 0px;
-	width: 100%;
-	 
+	width: 90%;
 	height: auto;
 	padding: 0px;
 	margin-right: 5px;
@@ -68,44 +69,34 @@ img:hover  {
 	margin: auto;
 	border: 5px solid white;
 	box-shadow: 0px 14px 40px white;
-	 z-index: 9999;
-	 justify-content: left;
-	 box-sizing: border-box; 
+	z-index: 9999;
+	justify-content: center;
+	box-sizing: border-box; 
     display: flex;
     width: 100%;
 	left: 0;
     padding: 0px;
-        text-shadow: 0px 8px 15px black;
+    text-shadow: 0px 8px 15px black;
 	cursor: pointer;
 	gap: 20px;
 	color: white;
 	flex-wrap:wrap;
 	margin-bottom: 40px;
-	 box-sizing: border-box; 
-	 font-size: 20 px;
-	  align-items: center;
+	box-sizing: border-box; 
+	font-size: 20 px;
+	align-items: center;
 }
 
-.menu .h1 {
-	 width:"50%";
-	 height: auto;
-	 background-color: red;
-	 margin: 0;
-	 padding: 15px;
-	 align-items: center;
-	 
-}
 
 .menu:hover {
 	box-shadow: 0px 14px 40px yellow;
-	
-}
+	}
 
 a {
 	color:white;
 }
 
-a:hover{
+a:hover {
 	color:yellow;
 }
 
@@ -118,7 +109,6 @@ a:hover{
 	font-size: 80px;
 	justify-content: center;
 	text-shadow: 0px 8px 15px black;
-	width: 90%;
 	left: 0;
 	right: 0;
 	flex-wrap:wrap;
@@ -128,16 +118,14 @@ a:hover{
 	flex-wrap:wrap;
     width: 45%;
     height: auto;
-    display: inline;
+    display: flex;
 	top: 10px;
 	bottom:20px;
-	border-radius: 50%;
-	border: 10px solid white;
-}
-
-.link  {
-   
+	border-radius: 0%;
+	border: 5px solid white;
 	align-items: center;
+	justify-content: center;
+	
 }
 
 
@@ -148,7 +136,7 @@ a:hover{
 	width: 45%;
 	height: 600px;
 	border: 5px solid white;
-	padding: 26px;
+	padding: 30px;
 	box-shadow: 0px 14px 40px white;
 	bottom: 20px;
     font-size: 38px;
@@ -158,6 +146,8 @@ a:hover{
 	text-align: left;
 	overflow: auto;
 	flex-wrap:wrap;
+	padding-top: 10px;
+
 }
 
 .videogames:hover {
@@ -181,14 +171,10 @@ p {
 /* Contenedor principal que agrupa las dos secciones */
 .bloque2 { 
   display: flex;
-  margin: 40px;
+  margin: 240px;
+  width: 90%;
+  justify-content:center;
 }
-
-
-/* Las etiquetas de texto (p) ahora se alinean correctamente */
-
-
-/* Sección de la música (Zelda y Rayquaza) en Grid */
 
 .musica { 
   display: grid; 
@@ -204,11 +190,6 @@ p {
   padding: 10px ;
   text-align: center;
 }
-
-
-
-
-
 
 /* Cada tarjeta ordena su contenido de arriba hacia abajo de forma limpia */
 .audio-card { 
@@ -236,6 +217,11 @@ audio {
   height: 80px;
 }
 
+.majoras {
+	display: flex;
+	width: 45;
+
+}
 
 
 /* 1. Base Body Styles: Centers everything on the screen */
@@ -515,6 +501,10 @@ textarea::placeholder {
 	.bloque1 {	
 	flex-wrap:wrap;
 	
+	}
+	
+	.videogames {
+	font-size: 28px;	
 	}
 }
 
