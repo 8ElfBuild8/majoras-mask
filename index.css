@@ -250,7 +250,7 @@ body {
 
 /* 2. Main Slideshow Container */
 .container {
-  width: 70%;
+  width: 60%;
   max-width: 1800px; /* Limits maximum width on large screens */
   position: relative;
   box-sizing: border-box;
