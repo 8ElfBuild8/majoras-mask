@@ -16,6 +16,8 @@
         <a href="#gallery"><h1>Gallery</h1></a>
         <a href="#videos"><h1>Videos</h1></a>
         <a href="#contact"><h1>Contact</h1></a>
+		
+		
     </nav>
 </div>
 
@@ -26,17 +28,28 @@
 
 
 
-<div class="bloque1">
+<div class="bloque1" id="about">
     <img src="link.jpg" class="link" alt="Link">
-    <p class="videogames">Majora's Mask, is one of the best Zelda video games.</p>
+    <p class="videogames">Majora's Mask, is one of the best Zelda video games.<br>
+	 <span class="field">There are many important areas to visit:<br>
+	 Hyrule field.<br>
+	 Epona Ranch.<br>
+	 Temple of time.<br>
+	 Swordman's training room.<span></p>
+	
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <div class="bloque2">
-    <div class="musica" id="musica">
-        <p>Musicas.</p>
-    </div>
-             
+                 
     <div class="audio-card"> 
+	    <p class="musica" id="musica">Musicas.</p>
+	
         <label for="shop-audio">Entrance:</label><audio id="shop-audio" src="shop.mp3" controls></audio><br>
         <label for="storm-audio">Storm:</label><audio id="storm-audio" src="storm.mp3" controls></audio><br>
         <label for="clock-audio">Clock Town:</label><audio id="clock-audio" src="clocktown.mp3" controls></audio><br>
@@ -89,8 +102,8 @@
   <a class="next" onclick="plusSlides(1)">❯</a>
 
   <!-- Caption -->
-  <div class="caption-container">
-    <p id="caption"></p>
+  <div class="caption-container" >
+    <p id="caption" class="caption"></p>
   </div>
 
   <!-- Thumbnail Images -->
@@ -144,5 +157,7 @@
 <script src="index-sonidos.js"></script>
 <script src="index.js"></script>
 <script src="index-slider.js"></script>
+
+
 </body>
 </html>
