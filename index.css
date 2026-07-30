@@ -184,7 +184,7 @@ p {
   padding-bottom: 0px;
   color: white;
   flex-wrap:wrap;
- 
+  font-size: 40px;
 }
 
 /* Sección de la música (Zelda y Rayquaza) en Grid */
