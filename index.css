@@ -82,6 +82,16 @@ img:hover  {
 	margin-bottom: 40px;
 	 box-sizing: border-box; 
 	 font-size: 20 px;
+	 align-items: center;
+}
+
+.menu .h1 {
+	 width:"50%";
+	 height: auto;
+	 background-color: red;
+	 margin: 0;
+	 padding: 15px;
+	 align-items: center;
 	 
 }
 
