@@ -434,6 +434,8 @@ textarea::placeholder {
   margin: 200px auto 0 auto; /* Sets top spacing and centers horizontally */
   text-align: center;
   box-sizing: border-box; /* Keeps borders and padding inside the 30% width */
+  flex-wrap:wrap;
+  
 }
 
 
