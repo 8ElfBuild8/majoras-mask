@@ -526,5 +526,9 @@ textarea::placeholder {
 	font-size: 28px;
 	overflow: auto;	
 	}
+	.audio-card, .bloque2 {
+		margin-left: 10px;
+		margin:   30px;
+	}
 }
 
