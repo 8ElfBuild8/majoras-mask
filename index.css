@@ -221,7 +221,7 @@ label {
 /* El reproductor de audio se adapta al ancho disponible */
 audio {
   width: 90%;
-  height: 80px;
+  height: 50px;
 }
 
 .majoras {
