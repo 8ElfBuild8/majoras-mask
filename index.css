@@ -220,7 +220,7 @@ label {
 
 /* El reproductor de audio se adapta al ancho disponible */
 audio {
-  width: 90%;
+  width: 80%;
   height: 50px;
 }
 
