@@ -491,33 +491,35 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 800px) {
-	
-	.menu {
-		font-size: 8px;
-		
+
+	html{
+    zoom: 75%;
 	}
 	
+	.menu {
+	font-size: 8px;
+		}
+	
 	.contact h2 {
-		font-size: 28px;
-		width: 30%;
+	font-size: 28px;
+	width: 30%;
 	}
 	
 	.btn1 {
-		font-size: 25px;
-		background-color: forestgreen;
-		text-align: center;
-		 flex-wrap:wrap;
-		 display: inline;
-         padding: 10px 10px 10px 10px ;
+	font-size: 25px;
+	background-color: forestgreen;
+	text-align: center;
+	flex-wrap:wrap;
+	display: inline;
+    padding: 10px 10px 10px 10px ;
 	}
 	
 	.caption-container {
-		font-size: 28px;
+	font-size: 28px;
 	}
 	
 	.bloque1 {	
 	flex-wrap:wrap;
-	
 	}
 	
 	.videogames {
