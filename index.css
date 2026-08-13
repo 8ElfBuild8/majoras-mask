@@ -171,7 +171,7 @@ p {
 /* Contenedor principal que agrupa las dos secciones */
 .bloque2 { 
   display: flex;
-  margin: 0px;
+  margin: 120px;
   width: 90%;
   justify-content:center;
   gap: 40px;
