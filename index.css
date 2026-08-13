@@ -202,8 +202,8 @@ p {
   padding: 5px;
   gap: 5px;
   white-space: wrap;
-  margin: 5px ;
-   align-content: center;
+  margin-left: 45px ;
+  align-content: center;
 }
 
 /* Estilo y separación del texto */
