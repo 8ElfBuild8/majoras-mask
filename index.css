@@ -186,7 +186,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
   gap: 25px;                    
   color: white; 
-  width: 90%;                  /* FIXED: Widened to give your music elements breathing room */
+  width: 80%;                  /* FIXED: Widened to give your music elements breathing room */
   font-size: 48px;             /* FIXED: Scaled down from 120px so titles fit on standard monitors */
   margin: 0 auto 150px 0;    /* FIXED: 'auto' forces this black grid to sit perfectly center */
   background-color: black;
