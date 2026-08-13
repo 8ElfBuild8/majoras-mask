@@ -21,7 +21,7 @@ html {
 	scroll-behavior: smooth;
     
     /* Ajusta este valor para que coincida exactamente con la altura de tu nav fijo */
-    scroll-padding-top: 140px; 
+    scroll-padding-top: 120px; 
 	    
 }
 
